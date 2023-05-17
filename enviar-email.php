@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = $_POST['mensagem'];
 
     // Configurações do e-mail
-    $to = "carlosaraujo26032009@gmail.com";  // Insira o seu endereço de e-mail aqui
+    $to = "carlosaraujo26032009@gmail.com";
     $subject = "Relato de Xenofobia";
     $message = "Nome: " . $nome . "\n" .
                "E-mail: " . $email . "\n" .
