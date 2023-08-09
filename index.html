@@ -1,28 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Relato de Xenofobia</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Biblioteca de Mangás</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+  }
+  .header {
+    background-color: #e50914;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .banner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  .item {
+    width: 50%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  .item img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .item-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
-	<form method="post" action="enviar-email.php">
-		<h1>Relato de Xenofobia</h1>
-		<label for="nome">Nome:</label>
-		<input type="text" name="nome" id="nome" required>
-
-		<label for="email">E-mail:</label>
-		<input type="email" name="email" id="email" required>
-
-		<label for="local">Local onde ocorreu:</label>
-		<input type="text" name="local" id="local" required>
-
-		<label for="mensagem">Descrição do incidente:</label>
-		<textarea name="mensagem" id="mensagem" required></textarea>
-
-		<input type="submit" value="Enviar">
-	</form>
-	<script src="script.js"></script>
+  <div class="header">
+    <h1>N Mangás</h1>
+  </div>
+  <div class="banner">
+    <img src="caminho-para-banner.jpg" alt="Banner">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="item">
+        <img src="caminho-para-manga1.jpg" alt="Manga 1">
+        <div class="item-title">Manga 1</div>
+      </div>
+      <div class="item">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.terra.com.br%2Fgameon%2Fdemon-slayer-saiba-tudo-sobre-o-anime-que-e-sucesso-mundial%2Ca286f10ae5f71262b63356c17a35e730f2usgk8p.html&psig=AOvVaw0TDC_sf3b9STTY259dTJYf&ust=1691670508829000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKCBm_HJz4ADFQAAAAAdAAAAABAE" alt="Manga 2">
+        <div class="item-title">Manga 2</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
