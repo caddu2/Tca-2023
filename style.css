@@ -1,65 +1,55 @@
-/*Fundo*/
-
 body {
-	font-family: Arial, sans-serif;
-	background-color: #FFAA; 
-}
-/**/
-form {
-	max-width: 500px;
-	margin: 0 auto;
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
-	animation: fade-in 0.5s;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: white;
 }
 
-h1 {
-	font-size: 28px;
-	color: #555;
-	margin-top: 0;
-	text-align: center; /* Adicionado para centralizar o título */
+.header {
+  background-color: #e50914;
+  padding: 10px 0;
+  text-align: center;
 }
 
-label {
-	display: block;
-	margin-bottom: 5px;
-	color: #555;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-input[type=text], input[type=email], input[type=tel], textarea {
-	padding: 10px;
-	border-radius: 5px;
-	border: none;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-	width: 100%;
-	margin-bottom: 60px;
-	font-size: 16px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-input[type=submit] {
-	background-color: #4CAF50;
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	font-size: 16px;
-	cursor: pointer;
-	transition: background-color 0.3s;
+.item {
+  flex: 1 0 calc(33.33% - 20px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-input[type=submit]:hover {
-	background-color: #3e8e41;
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 480px) {
-	form {
-		margin: 0 10px;
-	}
+.item img {
+  width: 100%;
+  vertical-align: top;
 }
 
-@keyframes fade-in {
-	from { opacity: 0; }
-	to { opacity: 1; }
+.item-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
 }
