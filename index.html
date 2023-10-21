@@ -1,88 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Minha Biblioteca de Mangás</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-  body {
-    font-family: 'Poppins', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #111;
-    color: purple;
-  }
-  .header {
-    background-color: #000000;
-    padding: 15px 0;
-    text-align: center;
-  }
-  .banner {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .banner img {
-    width: 100%;
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  .row {
-    display: flex;
-    justify-content: center;
-  }
-  .item {
-    width: 50%;
-    max-width: 600px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  .item img {
-    width: 100%;
-    vertical-align: top;
-  }
-  .item-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 8px;
-    font-weight: bold;
-    text-align: center;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bagrezap</title>
 </head>
 <body>
-  <div class="header">
-    <h1>N Mangás</h1>
-  </div>
-  <div class="banner">
-    <img src="" alt="Banner">
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="item">
-        <img src="https://i.pinimg.com/736x/d9/31/c5/d931c560cfa8154e0da7d36480c96bfc.jpg" alt="Manga 1">
-        <div class="item-title">Manga 1</div>
-      </div>
-      <div class="item">
-        <img src="https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2021/09/10/demon-slayer-capa.png" alt="Manga 2">
-        <div class="item-title">Manga 2</div>
-      </div>
+    <div class="chat-container">
+        <div class="logo">Bagrezap</div>
+        <div class="chat">
+            <!-- Mensagens aparecerão aqui -->
+        </div>
+        <div class="input-container">
+            <input type="text" id="message-input" placeholder="Digite sua mensagem">
+            <button id="send-button">Enviar</button>
+        </div>
     </div>
-  </div>
+    <script src="script.js"></script>
 </body>
 </html>
